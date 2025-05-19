@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criptografia Segura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; }
+        .container { background: #f5f5f5; padding: 20px; border-radius: 8px; }
+        textarea { width: 100%; margin: 10px 0; padding: 8px; }
+        button { background: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
+        .logout { float: right; background: #f44336; }
+        .erro { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo, {{ session.usuario }}! <a href="{{ url_for('logout') }}" class="logout">Sair</a></h1>
+        <form method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            
+            <textarea name="texto" rows="4" placeholder="Digite o texto..."></textarea>
+            <div>
+                <button type="submit" name="acao" value="criptografar">Criptografar</button>
+                <button type="submit" name="acao" value="descriptografar">Descriptografar</button>
+            </div>
+        </form>
+        
+        {% if resultado %}
+            <h3>Resultado:</h3>
+            <textarea rows="4" readonly>{{ resultado }}</textarea>
+        {% endif %}
+        
+        {% if erro %}
+            <p class="erro">{{ erro }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
