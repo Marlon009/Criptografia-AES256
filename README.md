@@ -1,83 +1,90 @@
-BabaYaga's Cyber Toolkit 🔐
-Um arsenal de ferramentas para pentesters e desenvolvedores com estilo hacker dark web
+# 🔐 BabaYaga's Cyber Toolkit 
 
-BabaYaga Toolkit Screenshot
-Interface dark web com efeitos hacker e easter eggs
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-2.3-green?logo=flask)](https://flask.palletsprojects.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
 
-🌟 Visão Geral
-O BabaYaga's Cyber Toolkit é uma aplicação web que combina ferramentas úteis para segurança cibernética e desenvolvimento, tudo envolto em uma experiência imersiva de terminal hacker. Desenvolvido em Python com Flask, oferece funcionalidades práticas enquanto mantém um estilo dark web com piadas inteligentes e easter eggs.
+> **Um arsenal hacker dark web para pentesters e desenvolvedores**  
+> *"O Baba Yaga mandou..."*
 
-bash
+![Screenshot da Interface](screenshot.png)  
+
+
+## 🌟 Visão Geral
+Aplicação web que combina ferramentas de segurança cibernética e desenvolvimento em uma experiência imersiva de terminal hacker. Desenvolvido em Python com Flask, oferece:
+
+- ✅ Ferramentas práticas para pentest e desenvolvimento
+- 🕵️‍♂️ Estética dark web com piadas inteligentes
+- � Easter eggs interativos e surpresas
+- 🔒 Autenticação segura com proteção anti-brute force
+
+```bash
 root@baba_yaga:~# toolkit --features
-✅ Ferramentas de pentest avançadas
-🧠 Utilitários para desenvolvedores
+✅ Ferramentas de pentest avançadas 
+🧠 Utilitários para desenvolvedores 
 💥 Easter eggs e surpresas interativas
-🔐 Autenticação segura com proteção anti-brute force
 🛠️ Funcionalidades
-🔐 Para Hackers (Pentest)
+🔐 Pentest Tools
 Ferramenta	Status	Descrição
-Criptografia AES	✅ Implementado	Criptografia simétrica AES-256-CBC
-Scanner de Portas	✅ Implementado	Verificação de portas TCP abertas
-Verificador de Vazamentos	🚧 Em construção	Checa emails em breaches (API HIBP)
-Força Bruta (Wordlist)	🔜 Planejado	Ataque de dicionário a serviços
-Quebra de ZIPs	🔜 Planejado	Quebra senhas de arquivos ZIP
-Gerador de Hashes	🔜 Planejado	MD5, SHA-1, SHA-256 + comparação
-Sniffer Simulado	🔜 Planejado	Captura pacotes de rede educacional
-Decodificador	🔜 Planejado	Base64, URL, JWT, ROT13
-Validador de Malware	🔜 Planejado	Verificação de arquivos suspeitos
-💻 Para Desenvolvedores
+Criptografia AES	✅ Ativo	Criptografia simétrica AES-256-CBC
+Scanner de Portas	✅ Ativo	Verificação de portas TCP abertas
+Verificador de Vazamentos	🚧 Beta	Checa emails em breaches (API HIBP)
+Força Bruta (Wordlist)	🔜 Em breve	Ataque de dicionário a serviços
+Quebra de ZIPs	🔜 Em breve	Quebra senhas de arquivos ZIP
+Sniffer 	🔜 Em breve	Captura pacotes de rede educacional
+💻 Developer Tools
 Ferramenta	Status	Descrição
-Validador de JSON	🔜 Planejado	Valida e formata JSON com syntax highlighting
-Gerador de UUIDs	🔜 Planejado	UUIDs v4 e baseados em timestamp
-Conversor de Texto	🔜 Planejado	CamelCase ↔ snake_case ↔ kebab-case
-Validador de URLs	🔜 Planejado	Verificação de formato e disponibilidade
-Ferramenta de Debug	🔜 Planejado	Console Python interativo sandboxed
-Conversor de Timestamp	🔜 Planejado	Epoch ↔ Data legível
-Testador de Regex	🔜 Planejado	Valida expressões regulares
-⚙️ Tecnologias Utilizadas
-Backend: Python, Flask, Cryptography
+Validador de JSON	🔜 Em breve	Valida e formata JSON com syntax highlighting
+Gerador de UUIDs	🔜 Em breve	UUIDs v4 e baseados em timestamp
+Conversor de Texto	🔜 Em breve	CamelCase ↔ snake_case ↔ kebab-case
+Validador de URLs	🔜 Em breve	Verificação de formato e disponibilidade
+Testador de Regex	🔜 Em breve	Valida expressões regulares
+⚙️ Tech Stack
+Backend:
+Python Flask
 
-Frontend: HTML5, CSS3 (Dark Theme), JavaScript
+Frontend:
+HTML5 CSS3 JavaScript
 
-Segurança: Bcrypt, CSRF Tokens, AES-256-CBC
+Segurança:
+AES-256-CBC · Bcrypt · CSRF Tokens · Rate Limiting
 
-Infra: Gunicorn, Nginx (para produção)
+APIs Integradas:
+Have I Been Pwned (verificação de vazamentos)
 
-APIs: Have I Been Pwned (breach checking)
-
-
-🌐 Demonstração Online
-Demo Button
-Em breve disponível para teste com funcionalidades limitadas
-
-🎮 Easter Eggs e Surpresas
+🎮 Easter Eggs
 Rick Roll Protegido: Errou a senha? Prepare-se para uma surpresa musical!
 
-Modo BabaYaga: Digite "BabaYaga" em qualquer campo para ativar efeitos especiais
+Modo BabaYaga: Digite BabaYaga em qualquer campo para ativar efeitos especiais
 
 Hotel Continental: Acesse a página secreta com o código 11121964
 
 Proteção Contra Screenshots: Sistema detecta tentativas de print screen
 
+🌐 Demonstração Online
+Acessar Demonstração
+Em breve disponível com funcionalidades limitadas - sujeita a alterações
+
+
+
 🤝 Como Contribuir
 Faça um fork do projeto
 
-Crie sua feature branch (git checkout -b feature/nova-ferramenta)
+Crie sua branch: git checkout -b feat/nova-ferramenta
 
-Commit suas mudanças (git commit -m 'Adiciona nova ferramenta XYZ')
+Commit suas mudanças: git commit -m 'Adiciona ferramenta XYZ'
 
-Push para a branch (git push origin feature/nova-ferramenta)
+Push para a branch: git push origin feat/nova-ferramenta
 
 Abra um Pull Request
 
+Exemplo de implementação:
+
 python
-# Exemplo de implementação de nova ferramenta
 def nova_ferramenta():
     print("Implemente sua ideia aqui!")
     return "PRs bem-vindos!"
 📄 Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+Distribuído sob licença MIT. Veja o arquivo LICENSE para detalhes.
 
-Desenvolvido por [Marlon- Baba Yaga]
-"O Baba Yaga do código que todos temem" 🔫🐕
-LinkedIn
+Criado com 🖤 por [Marlon - Baba Yaga]
